@@ -12,7 +12,7 @@ function preload(){
 }
 function setup() {
   createCanvas(1000,600);
-  spacecraft = createSprite(285,270);
+  spacecraft = createSprite(285,500);
   spacecraft.addImage(scimg);
   spacecraft.scale = 0.15;
   
