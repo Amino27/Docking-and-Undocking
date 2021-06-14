@@ -11,7 +11,7 @@ function preload(){
   scimg3= loadImage("spacecraft4.png");
 }
 function setup() {
-  createCanvas(600, 350);
+  createCanvas(1000,600);
   spacecraft = createSprite(285,270);
   spacecraft.addImage(scimg);
   spacecraft.scale = 0.15;
@@ -32,13 +32,13 @@ function draw() {
   }
     
   if(keyDown("LEFT_ARROW")){
-      spacecraft.addImage(scimg3);
-    spacecraft.x = spacecraft.x + 1;
+      spacecraft.addImage(scimg2);
+    spacecraft.x = spacecraft.x - 1;
   }
     
   if(keyDown("RIGHT_ARROW")){
-      spacecraft.addImage(scimg2);
-    spacecraft.x = spacecraft.x - 1;
+      spacecraft.addImage(scimg3);
+    spacecraft.x = spacecraft.x + 1;
   }
     
   if(keyDown("DOWN_ARROW")){
